@@ -1,13 +1,12 @@
 import './App.css';
-import { Container } from '@material-ui/core';
-import { Typography } from '@material-ui/core';
-import { Grid } from '@material-ui/core';
+import { Container, Tooltip, Typography, Grid } from '@material-ui/core';
+import MailRoundedIcon from '@material-ui/icons/MailRounded';
+import InsertDriveFileRoundedIcon from '@material-ui/icons/InsertDriveFileRounded';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import 'fontsource-roboto';
 
-
 function App() {
-
-
 
   return (
     <Container className="App" maxWidth='lg'>
@@ -66,13 +65,45 @@ function App() {
           <Typography variant='h3'>for</Typography>
           <Typography variant='h1'>HMU</Typography>
         </Grid>
+
         <Grid item xs={12} sm={12} md={12} lg={6}>
-          <a href='mailto:trevor2492@gmail.com'>trevor2492@gmail.com</a><br />
-          <a href='./Allen_Trevor_Resume.pdf' download>Download My Resume</a><br />
-          <a href='https://www.linkedin.com/in/trevor-allen-64b024a6/' target='blank'>LinkedIn</a><br />
-          <a href='https://github.com/Trevor2492' target='blank'>GitHub</a>
+            <a href='mailto:trevor2492@gmail.com'>
+              <Tooltip title='Email to: trevor2492@gmail.com'>
+                <MailRoundedIcon style={{ color: 'black' }}/>
+              </Tooltip>
+            </a><br />
+          
+          <a href='./Allen_Trevor_Resume.pdf' download>
+            <Tooltip title='Download My Resume'>
+              <InsertDriveFileRoundedIcon style={{ color: 'black' }}/>
+            </Tooltip>
+          </a><br />
+
+          <a 
+            href='https://www.linkedin.com/in/trevor-allen-64b024a6/' 
+            target='blank'
+          >
+            <Tooltip title='My LinkedIn'>
+              <LinkedInIcon style={{ color: 'black' }}/>
+            </Tooltip>
+          </a><br />
+
+          <a 
+            href='https://github.com/Trevor2492' 
+            target='blank'
+          >
+            <Tooltip title='My GitHub'>
+              <GitHubIcon style={{ color: 'black' }}/>
+            </Tooltip>
+          </a>
         </Grid>
       </Grid>
+      <div>
+        Created with React 
+        <img src='./logo192.png' alt='react logo' style={{ height: 50 }}/>
+        and Material UI 
+        <img src='./Material_ui.png' alt='material ui logo' style={{ height: 50 }}/>
+      </div>
     </Container>
   );
 }
