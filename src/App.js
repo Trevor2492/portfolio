@@ -67,7 +67,10 @@ function App() {
           <Typography variant='h1'>HMU</Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={6}>
-          Email, LinkedIn, Github, Resume
+          <a href='mailto:trevor2492@gmail.com'>trevor2492@gmail.com</a><br />
+          <a href='./Allen_Trevor_Resume.pdf' download>Download My Resume</a><br />
+          <a href='https://www.linkedin.com/in/trevor-allen-64b024a6/' target='blank'>LinkedIn</a><br />
+          <a href='https://github.com/Trevor2492' target='blank'>GitHub</a>
         </Grid>
       </Grid>
     </Container>
