@@ -10,6 +10,13 @@ function App() {
 
   return (
     <Container className="App" maxWidth='lg'>
+      <div className='nav' id='nav'>
+        <a href='#about-me'>About</a>
+        <a href='#family'>Family</a>
+        <a href='#school'>School</a>
+        <a href='#work'>Work</a>
+        <a href='#hmu'>Contact</a>
+      </div>
       <Grid container spacing={1}>
         <Grid item className='hero' xs={12} sm={12} md={12} lg={12}>
           <Typography variant='h1'>T</Typography>
@@ -17,7 +24,7 @@ function App() {
           <Typography variant='h3'>for</Typography>
           <Typography variant='h1'>Trevor</Typography>
         </Grid>
-        <Grid item className='about-me' xs={12} sm={12} md={12} lg={6}>
+        <Grid item className='about-me' id='about-me' xs={12} sm={12} md={12} lg={6}>
           <Typography variant='h1'>A</Typography>
           <Typography variant='h3'>little</Typography>
           <Typography variant='h3'>about</Typography>
@@ -32,7 +39,7 @@ function App() {
           <Typography>Born and raised in California</Typography>
           <Typography>Can call many different places "home", including abroad</Typography>
         </Grid>
-        <Grid className='family' item xs={12} sm={12} md={12} lg={6}>
+        <Grid className='family' id='family' item xs={12} sm={12} md={12} lg={6}>
           <Typography variant='h1'>F</Typography>
           <Typography variant='h3'>is</Typography>
           <Typography variant='h3'>for</Typography>
@@ -41,7 +48,7 @@ function App() {
         <Grid item xs={12} sm={12} md={12} lg={6}>
           Family images...
         </Grid>
-        <Grid className='school' item xs={12} sm={12} md={12} lg={6}>
+        <Grid className='school' id='school' item xs={12} sm={12} md={12} lg={6}>
           <Typography variant='h1'>S</Typography>
           <Typography variant='h3'>is</Typography>
           <Typography variant='h3'>for</Typography>
@@ -50,7 +57,7 @@ function App() {
         <Grid item xs={12} sm={12} md={12} lg={6}>
           BYU-I / Careerfoundry
         </Grid>
-        <Grid className='work' item xs={12} sm={12} md={12} lg={6}>
+        <Grid className='work' id='work' item xs={12} sm={12} md={12} lg={6}>
           <Typography variant='h1'>W</Typography>
           <Typography variant='h3'>is</Typography>
           <Typography variant='h3'>for</Typography>
@@ -59,7 +66,7 @@ function App() {
         <Grid item xs={12} sm={12} md={12} lg={6}>
           Portfolio display of work
         </Grid>
-        <Grid className='hmu' item xs={12} sm={12} md={12} lg={6}>
+        <Grid className='hmu' id='hmu' item xs={12} sm={12} md={12} lg={6}>
           <Typography variant='h1'>H</Typography>
           <Typography variant='h3'>is</Typography>
           <Typography variant='h3'>for</Typography>
