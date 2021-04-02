@@ -5,7 +5,7 @@ import MailRoundedIcon from '@material-ui/icons/MailRounded';
 import InsertDriveFileRoundedIcon from '@material-ui/icons/InsertDriveFileRounded';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import KeyboardArrowUpRoundedIcon from '@material-ui/icons/KeyboardArrowUp';
 import { useEffect, useState } from 'react';
 import 'fontsource-roboto';
 
@@ -139,7 +139,7 @@ function App() {
         <a href='#nav'>
           {/* StylesProvider overrides the material ui component styles in CSS */}
           <StylesProvider injectFirst>
-            <Fab color='primary' className='fab'><KeyboardArrowUpIcon/></Fab>
+            <Fab color='primary' className='fab'><KeyboardArrowUpRoundedIcon/></Fab>
           </StylesProvider>
         </a> 
       }
