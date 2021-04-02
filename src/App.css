@@ -12,9 +12,10 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+}
+
+.nav-item {
+  margin: 8px;
 }
 
 /* This is the class for all Grid items */
@@ -71,4 +72,15 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.fab {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.created-with {
+  height: 150px;
+  line-height: 150px;
 }

@@ -1,24 +1,46 @@
 import './App.css';
-import { Container, Tooltip, Typography, Grid } from '@material-ui/core';
+import { Container, Tooltip, Typography, Grid, Fab } from '@material-ui/core';
+import { StylesProvider } from '@material-ui/core/styles';
 import MailRoundedIcon from '@material-ui/icons/MailRounded';
 import InsertDriveFileRoundedIcon from '@material-ui/icons/InsertDriveFileRounded';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import { useEffect, useState } from 'react';
 import 'fontsource-roboto';
 
 function App() {
 
+  const [scrollY, setScrollY] = useState(0);
+
+  function logit() {
+    setScrollY(window.pageYOffset);
+    console.log(scrollY);
+  }
+
+  useEffect(() => {
+    function watchScroll() {
+      window.addEventListener("scroll", logit);
+    }
+    watchScroll();
+    // Remove listener (like componentWillUnmount)
+    return () => {
+      window.removeEventListener("scroll", logit);
+    };
+  }, []);
+
+
   return (
     <Container className="App" maxWidth='lg'>
       <div className='nav' id='nav'>
-        <a href='#about-me'>About</a>
-        <a href='#family'>Family</a>
-        <a href='#school'>School</a>
-        <a href='#work'>Work</a>
-        <a href='#hmu'>Contact</a>
+        <a href='#about-me' className='nav-item'>About</a>
+        <a href='#family' className='nav-item'>Family</a>
+        <a href='#school' className='nav-item'>School</a>
+        <a href='#work' className='nav-item'>Work</a>
+        <a href='#hmu' className='nav-item'>Contact</a>
       </div>
       <Grid container spacing={1}>
-        <Grid item className='hero' xs={12} sm={12} md={12} lg={12}>
+        <Grid item className='hero' id='hero' xs={12} sm={12} md={12} lg={12}>
           <Typography variant='h1'>T</Typography>
           <Typography variant='h3'>is</Typography>
           <Typography variant='h3'>for</Typography>
@@ -111,6 +133,16 @@ function App() {
         and Material UI 
         <img src='./Material_ui.png' alt='material ui logo' style={{ height: 50 }}/>
       </div>
+
+      {/* renders the FAB */}
+      { scrollY && 
+        <a href='#nav'>
+          {/* StylesProvider overrides the material ui component styles in CSS */}
+          <StylesProvider injectFirst>
+            <Fab color='primary' className='fab'><KeyboardArrowUpIcon/></Fab>
+          </StylesProvider>
+        </a> 
+      }
     </Container>
   );
 }
