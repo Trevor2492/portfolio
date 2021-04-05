@@ -2,6 +2,22 @@
   text-align: center;
   background-color: rgb(238, 238, 238);
   height: 100%;
+  font-family: SFFedora;
+}
+
+@font-face {
+  font-family: "SFFedora";
+  src: local("SFFedora"), url("./fonts/SF_Fedora.ttf") format("truetype");
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: SFFedora;
 }
 
 a {

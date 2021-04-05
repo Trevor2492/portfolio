@@ -118,7 +118,9 @@ function App() {
 
         <Grid item xs={12} sm={12} md={12} lg={6}>
 
-          <div id='hmu-2' style={{ height: 400 }}/>
+          <a href='mailto:trevor2492@gmail.com'>
+            <div id='hmu-2' style={{ height: 400 }}/>
+          </a>
 
           <a href='mailto:trevor2492@gmail.com'>
             <Tooltip title='Email to: trevor2492@gmail.com'>
@@ -151,9 +153,10 @@ function App() {
           </a>
         </Grid>
       </Grid>
-      <div>
+
+      <div className='footer' id='footer'>
         Created with React 
-        <div id='react-logo' alt='react logo' style={{ height: 80 }}/>
+        <div id='react-logo' alt='react logo' style={{ height: 50 }}/>
         and Material UI 
         <img src='./Material_ui.png' alt='material ui logo' style={{ height: 50 }}/>
       </div>
