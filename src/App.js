@@ -7,6 +7,11 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import KeyboardArrowUpRoundedIcon from '@material-ui/icons/KeyboardArrowUp';
 import { useEffect, useState } from 'react';
+
+// used for the animations
+import lottie from 'lottie-web';
+import reactLogo from './react-logo.json';
+
 import 'fontsource-roboto';
 
 function App() {
@@ -15,18 +20,25 @@ function App() {
 
   function logit() {
     setScrollY(window.pageYOffset);
-    console.log(scrollY);
   }
 
   useEffect(() => {
+
     function watchScroll() {
       window.addEventListener("scroll", logit);
     }
     watchScroll();
     // Remove listener (like componentWillUnmount)
+    
+    lottie.loadAnimation({
+      container: document.querySelector('#react-logo'),
+      animationData: reactLogo,
+    });
+
     return () => {
       window.removeEventListener("scroll", logit);
     };
+
   }, []);
 
 
@@ -129,7 +141,7 @@ function App() {
       </Grid>
       <div>
         Created with React 
-        <img src='./logo192.png' alt='react logo' style={{ height: 50 }}/>
+        <div id='react-logo' alt='react logo' style={{ height: 80 }}/>
         and Material UI 
         <img src='./Material_ui.png' alt='material ui logo' style={{ height: 50 }}/>
       </div>
