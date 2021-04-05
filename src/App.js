@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react';
 // used for the animations
 import lottie from 'lottie-web';
 import reactLogo from './react-logo.json';
+import contactMe from './contactMe.json';
 
 import 'fontsource-roboto';
 
@@ -27,14 +28,22 @@ function App() {
     function watchScroll() {
       window.addEventListener("scroll", logit);
     }
-    watchScroll();
-    // Remove listener (like componentWillUnmount)
     
+    watchScroll();
+    
+    //react logo animation
     lottie.loadAnimation({
       container: document.querySelector('#react-logo'),
       animationData: reactLogo,
     });
 
+    //contact me animation
+    lottie.loadAnimation({
+      container: document.querySelector('#hmu-2'),
+      animationData: contactMe,
+    });
+
+    // Remove listener (like componentWillUnmount)
     return () => {
       window.removeEventListener("scroll", logit);
     };
@@ -108,11 +117,14 @@ function App() {
         </Grid>
 
         <Grid item xs={12} sm={12} md={12} lg={6}>
-            <a href='mailto:trevor2492@gmail.com'>
-              <Tooltip title='Email to: trevor2492@gmail.com'>
-                <MailRoundedIcon style={{ color: 'black' }}/>
-              </Tooltip>
-            </a><br />
+
+          <div id='hmu-2' style={{ height: 400 }}/>
+
+          <a href='mailto:trevor2492@gmail.com'>
+            <Tooltip title='Email to: trevor2492@gmail.com'>
+              <MailRoundedIcon style={{ color: 'black' }}/>
+            </Tooltip>
+          </a><br />
           
           <a href='./Allen_Trevor_Resume.pdf' download>
             <Tooltip title='Download My Resume'>
