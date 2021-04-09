@@ -89,7 +89,7 @@ function App() {
           <Typography variant='h1'>Family</Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={6}>
-          Family images...
+          My family means evrything to me. I wouldn't be who I am today without them.
         </Grid>
         <Grid className='school' id='school' item xs={12} sm={12} md={12} lg={6}>
           <Typography variant='h1'>S</Typography>
