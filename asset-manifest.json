@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.c34ccb73.chunk.css",
+    "main.js": "/portfolio/static/js/main.a76136b5.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a76136b5.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.94691f5c.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.94691f5c.js.map",
+    "static/css/2.cb349300.chunk.css": "/portfolio/static/css/2.cb349300.chunk.css",
+    "static/js/2.5f6eb285.chunk.js": "/portfolio/static/js/2.5f6eb285.chunk.js",
+    "static/js/2.5f6eb285.chunk.js.map": "/portfolio/static/js/2.5f6eb285.chunk.js.map",
+    "static/js/3.78a65740.chunk.js": "/portfolio/static/js/3.78a65740.chunk.js",
+    "static/js/3.78a65740.chunk.js.map": "/portfolio/static/js/3.78a65740.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/2.cb349300.chunk.css.map": "/portfolio/static/css/2.cb349300.chunk.css.map",
+    "static/css/main.c34ccb73.chunk.css.map": "/portfolio/static/css/main.c34ccb73.chunk.css.map",
+    "static/js/2.5f6eb285.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5f6eb285.chunk.js.LICENSE.txt",
+    "static/media/Profile_Image.3f92291f.jpg": "/portfolio/static/media/Profile_Image.3f92291f.jpg",
+    "static/media/App.css": "/portfolio/static/media/SF_Fedora.dfefb480.ttf",
+    "static/media/index.css": "/portfolio/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94691f5c.js",
+    "static/css/2.cb349300.chunk.css",
+    "static/js/2.5f6eb285.chunk.js",
+    "static/css/main.c34ccb73.chunk.css",
+    "static/js/main.a76136b5.chunk.js"
+  ]
+}
