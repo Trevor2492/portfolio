@@ -11,6 +11,11 @@
   font-weight: normal;
 }
 
+.MuiTypography-h1,
+.MuiTypography-h3 {
+  font-family: SFFedora;
+}
+
 a {
   text-decoration: none;
 }
@@ -19,6 +24,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  padding-top: 10px;
 }
 
 .nav-item {
@@ -32,6 +38,23 @@ a {
   border-bottom: dotted gray 1px;
 }
 
+.profileImg {
+  display: flex;
+  width: 350px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 30px rgb(134, 134, 134);
+}
+
+.hero-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kid-2 {
+  text-align: left;
+}
+
 .hero,
 .about-me,
 .kid,
@@ -43,6 +66,13 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .fab {
