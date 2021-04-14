@@ -111,7 +111,7 @@ function App() {
           <Typography variant='h3'>for</Typography>
           <Typography variant='h1'>Work</Typography>
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={6} style={{ border: '1px solid blue' }}>
+        <Grid item xs={12} sm={12} md={12} lg={6}>
           <Grid container className='work-grid-container'>
             <Grid item className='work-grid-item' xs={12} sm={12} md={12} lg={12}>
               <Card>
@@ -127,29 +127,34 @@ function App() {
             <Grid item className='work-grid-item' xs={12} sm={12} md={12} lg={12}>
               <Card><img src={materialUiLogo} alt='test' style={{ height: '80px' }}/>
                 <Typography variant='h6'>
-                  MyFlix React
+                  MyFlix Angular
                 </Typography>
                 <Typography variant='body1'>
-                  A project I created in React to be the front-end of an API I built.
-                </Typography></Card>
+                  A project I created in Angular to be the front-end of an API I built.
+                </Typography>
+              </Card>
             </Grid>
             <Grid item className='work-grid-item' xs={12} sm={12} md={12} lg={12}>
               <Card><img src={materialUiLogo} alt='test' style={{ height: '80px' }}/>
                 <Typography variant='h6'>
-                  MyFlix React
+                  Meet-Up
                 </Typography>
                 <Typography variant='body1'>
-                  A project I created in React to be the front-end of an API I built.
-                </Typography></Card>
+                  A project I created in React to show "Meet-up" type events based on location.
+                  The app uses mock data and integrates with the Google Calendar API.
+                </Typography>
+              </Card>
             </Grid>
             <Grid item className='work-grid-item' xs={12} sm={12} md={12} lg={12}>
               <Card><img src={materialUiLogo} alt='test' style={{ height: '80px' }}/>
                 <Typography variant='h6'>
-                  MyFlix React
+                  React-Native Chat
                 </Typography>
                 <Typography variant='body1'>
-                  A project I created in React to be the front-end of an API I built.
-                </Typography></Card>
+                  A Chat app I created in React-Native. It uses the Gifted Chat library
+                  and allows users to share images from their device and their current location.
+                </Typography>
+              </Card>
             </Grid>
           </Grid>
         </Grid>
@@ -225,7 +230,7 @@ function App() {
       </div>
 
       {/* renders the FAB */}
-      { scrollY && 
+      { scrollY > 0 && 
         <a href='#nav'>
           {/* StylesProvider overrides the material ui component styles in CSS */}
           <StylesProvider injectFirst>
