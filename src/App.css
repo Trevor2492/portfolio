@@ -2,7 +2,6 @@
   text-align: center;
   background-color: rgb(238, 238, 238);
   height: 100%;
-  font-family: SFFedora;
 }
 
 @font-face {
@@ -79,4 +78,22 @@ a {
   position: fixed;
   right: 10px;
   bottom: 10px;
+}
+
+.work-grid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: auto;
+}
+
+.work-grid-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 180px;
+  width: auto;
 }

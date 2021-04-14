@@ -1,13 +1,14 @@
 import './App.css';
-import { Container, Tooltip, Typography, Grid, Fab } from '@material-ui/core';
+import { useEffect, useState } from 'react';
+import { Container, Tooltip, Typography, Grid, Fab, Card } from '@material-ui/core';
 import { StylesProvider } from '@material-ui/core/styles';
 import MailRoundedIcon from '@material-ui/icons/MailRounded';
 import InsertDriveFileRoundedIcon from '@material-ui/icons/InsertDriveFileRounded';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import KeyboardArrowUpRoundedIcon from '@material-ui/icons/KeyboardArrowUp';
-import { useEffect, useState } from 'react';
 import profileImage from './img/Profile_Image.jpg'
+import materialUiLogo from './img/Material_ui.png'
 
 // used for the animations
 import lottie from 'lottie-web';
@@ -55,6 +56,7 @@ function App() {
   return (
     <StylesProvider injectFirst>
     <Container className="App" maxWidth='lg'>
+
       <div className='nav' id='nav'>
         <a href='#about-me' className='nav-item'>About</a>
         <a href='#work' className='nav-item'>Work</a>
@@ -62,6 +64,7 @@ function App() {
         <a href='#family' className='nav-item'>Family</a>
         <a href='#hmu' className='nav-item'>Contact</a>
       </div>
+
       <Grid container spacing={1}>
         <Grid item className='hero' id='hero' xs={12} sm={12} md={12} lg={6}>
           <Typography variant='h1'>T</Typography>
@@ -72,6 +75,7 @@ function App() {
         <Grid item className='hero-2' id='hero-2' xs={12} sm={12} md={12} lg={6}>
           <img src={profileImage} className='profileImg' alt='trevor' />
         </Grid>
+
         <Grid item className='about-me' id='about-me' xs={12} sm={12} md={12} lg={6}>
           <Typography variant='h1'>A</Typography>
           <Typography variant='h3'>little</Typography>
@@ -100,15 +104,56 @@ function App() {
             </p>
           </Typography>
         </Grid>
+
         <Grid className='work' id='work' item xs={12} sm={12} md={12} lg={6}>
           <Typography variant='h1'>W</Typography>
           <Typography variant='h3'>is</Typography>
           <Typography variant='h3'>for</Typography>
           <Typography variant='h1'>Work</Typography>
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={6}>
-          Portfolio display of work
+        <Grid item xs={12} sm={12} md={12} lg={6} style={{ border: '1px solid blue' }}>
+          <Grid container className='work-grid-container'>
+            <Grid item className='work-grid-item' xs={12} sm={12} md={12} lg={12}>
+              <Card>
+                <img src={materialUiLogo} alt='test' style={{ height: '80px' }}/>
+                <Typography variant='h6'>
+                  MyFlix React
+                </Typography>
+                <Typography variant='body1'>
+                  A project I created in React to be the front-end of an API I built.
+                </Typography>
+              </Card>
+            </Grid>
+            <Grid item className='work-grid-item' xs={12} sm={12} md={12} lg={12}>
+              <Card><img src={materialUiLogo} alt='test' style={{ height: '80px' }}/>
+                <Typography variant='h6'>
+                  MyFlix React
+                </Typography>
+                <Typography variant='body1'>
+                  A project I created in React to be the front-end of an API I built.
+                </Typography></Card>
+            </Grid>
+            <Grid item className='work-grid-item' xs={12} sm={12} md={12} lg={12}>
+              <Card><img src={materialUiLogo} alt='test' style={{ height: '80px' }}/>
+                <Typography variant='h6'>
+                  MyFlix React
+                </Typography>
+                <Typography variant='body1'>
+                  A project I created in React to be the front-end of an API I built.
+                </Typography></Card>
+            </Grid>
+            <Grid item className='work-grid-item' xs={12} sm={12} md={12} lg={12}>
+              <Card><img src={materialUiLogo} alt='test' style={{ height: '80px' }}/>
+                <Typography variant='h6'>
+                  MyFlix React
+                </Typography>
+                <Typography variant='body1'>
+                  A project I created in React to be the front-end of an API I built.
+                </Typography></Card>
+            </Grid>
+          </Grid>
         </Grid>
+
         <Grid className='school' id='school' item xs={12} sm={12} md={12} lg={6}>
           <Typography variant='h1'>S</Typography>
           <Typography variant='h3'>is</Typography>
@@ -176,7 +221,7 @@ function App() {
         <div>Created with React</div>
         <div id='react-logo' alt='react logo' style={{ height: 50 }}/>
         <div>and Material UI</div> 
-        <img src='./Material_ui.png' alt='material ui logo' style={{ height: 50 }}/>
+        <img src={materialUiLogo} alt='material ui logo' style={{ height: 50 }}/>
       </div>
 
       {/* renders the FAB */}
