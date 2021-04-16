@@ -97,3 +97,21 @@ a {
   height: 180px;
   width: auto;
 }
+
+@media only screen and (max-width: 450px) {
+  .nav {
+    visibility: hidden;
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .hamburger {
+    visibility: hidden;
+  }
+}

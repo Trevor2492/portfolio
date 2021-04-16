@@ -1,12 +1,22 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import { Container, Tooltip, Typography, Grid, Fab, Card } from '@material-ui/core';
+import { Container, 
+          Tooltip, 
+          Typography, 
+          Grid, 
+          Fab, 
+          Card, 
+          Menu, 
+          Button,
+          MenuItem
+          } from '@material-ui/core';
 import { StylesProvider } from '@material-ui/core/styles';
 import MailRoundedIcon from '@material-ui/icons/MailRounded';
 import InsertDriveFileRoundedIcon from '@material-ui/icons/InsertDriveFileRounded';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import KeyboardArrowUpRoundedIcon from '@material-ui/icons/KeyboardArrowUp';
+import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import profileImage from './img/Profile_Image.jpg'
 import materialUiLogo from './img/Material_ui.png'
 
@@ -52,6 +62,17 @@ function App() {
 
   }, []);
 
+  // mobile menu
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
 
   return (
     <StylesProvider injectFirst>
@@ -63,6 +84,35 @@ function App() {
         <a href='#school' className='nav-item'>School</a>
         <a href='#family' className='nav-item'>Family</a>
         <a href='#hmu' className='nav-item'>Contact</a>
+      </div>
+
+      <div className='hamburger' id='hamburger'>
+        <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+          <MenuRoundedIcon />
+        </Button>
+        <Menu
+          id="simple-menu"
+          anchorEl={anchorEl}
+          keepMounted
+          open={Boolean(anchorEl)}
+          onClose={handleClose}
+        >
+          <MenuItem onClick={handleClose}>
+            <a href='#about-me' className='nav-item'>About</a>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <a href='#work' className='nav-item'>Work</a>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <a href='#school' className='nav-item'>School</a>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <a href='#family' className='nav-item'>Family</a>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <a href='#hmu' className='nav-item'>Contact</a>
+          </MenuItem>
+        </Menu>
       </div>
 
       <Grid container spacing={1}>
