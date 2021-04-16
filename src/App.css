@@ -108,6 +108,10 @@ a {
     right: 20px;
     top: 20px;
   }
+
+  .MuiMenu-paper {
+    border-radius: 10px;
+  }
 }
 
 @media only screen and (min-width: 450px) {
