@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: rgb(40, 40, 40);
   background-color: #5b98ed13;
   height: 100%;
 }
@@ -40,7 +41,7 @@ a {
 .profileImg {
   display: flex;
   width: 350px;
-  border-radius: 50%;
+  border-radius: 20px;
   box-shadow: 5px 5px 30px rgb(134, 134, 134);
 }
 
@@ -72,6 +73,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
+  color: rgb(120, 120, 120);
 }
 
 .fab {
@@ -94,8 +97,31 @@ a {
   justify-content: center;
   align-items: center;
   margin: 10px;
-  height: 180px;
-  width: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.MuiCard-root {
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.more-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.MuiButton-root {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.resume-button {
+  margin: 0px;
+  margin-right: 10px;
 }
 
 @media only screen and (max-width: 450px) {

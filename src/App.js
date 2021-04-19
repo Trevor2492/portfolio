@@ -20,6 +20,11 @@ import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import GetAppRoundedIcon from '@material-ui/icons/GetAppRounded';
 import profileImage from './img/Profile_Image.jpg'
 import materialUiLogo from './img/Material_ui.png'
+import myFlixReact from './img/myflix-react.png'
+import myFlixAngular from './img/myflix-angular.png'
+import meet from './img/meet.png'
+import chat from './img/chat.png'
+import family from './img/family.jpeg'
 import certificate from './files/CareerFoundry_Certificate_Trevor Allen.pdf'
 
 // used for the animations
@@ -86,7 +91,7 @@ function App() {
         <Button 
           variant='contained' 
           color='primary' 
-          style={{ marginRight: '10px' }}
+          className='resume-button'
           startIcon={<GetAppRoundedIcon/>}
           download
           href='./Public/Allen_Trevor_Resume.pdf'
@@ -100,10 +105,11 @@ function App() {
         <a href='#hmu' className='nav-item'>Contact</a>
       </div>
 
-      <ScrollAnimation animateIn="fadeIn">
+      <ScrollAnimation  >
         Some Text
       </ScrollAnimation>
 
+      {/* displays the hamburger menu on mobile. Is hidden on large screens */}
       <div className='hamburger' id='hamburger'>
         <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
           <MenuRoundedIcon />
@@ -199,49 +205,143 @@ function App() {
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={6}>
           <Grid container className='work-grid-container'>
-            <Grid item className='work-grid-item' xs={12} sm={12} md={12} lg={12}>
+            <div item className='work-grid-item'>
               <Card>
-                <img src={materialUiLogo} alt='test' style={{ height: '80px' }}/>
-                <Typography variant='h6'>
+                <img src={myFlixReact} alt='test' style={{ width: '100%' }}/>
+                <Typography variant='h5'>
                   MyFlix React
                 </Typography>
                 <Typography variant='body1'>
-                  A project I created in React to be the front-end of an API I built.
+                  An app created with React to be the UI
+                  of the movie database API that I built. Users can create an account, 
+                  log-in, browse movies, save favorites, update and delete their account.
+                  Uses MongoDB, Express, Node.js, and React.
                 </Typography>
+                <Button 
+                  variant='contained' 
+                  color='primary'
+                  href='https://myflix-app.netlify.app'
+                  target='blank'
+                >
+                  Demo
+                </Button>
+                <Button 
+                  variant='contained' 
+                  color='primary'
+                  href='https://github.com/Trevor2492/myFlix-client'
+                  target='blank'
+                >
+                  Code
+                </Button>
               </Card>
-            </Grid>
-            <Grid item className='work-grid-item' xs={12} sm={12} md={12} lg={12}>
-              <Card><img src={materialUiLogo} alt='test' style={{ height: '80px' }}/>
-                <Typography variant='h6'>
+            </div>
+            <div item className='work-grid-item'>
+              <Card><img src={myFlixAngular} alt='test' style={{ width: '100%' }}/>
+                <Typography variant='h5'>
                   MyFlix Angular
                 </Typography>
                 <Typography variant='body1'>
-                  A project I created in Angular to be the front-end of an API I built.
+                  An app created with Angular to be the UI
+                  of the movie database API that I built. Users can create an account, 
+                  log-in, browse movies, save favorites, update and delete their account.
+                  Uses TypeScript, MongoDB, Express, Node.js, and Angular.
                 </Typography>
+                <Button 
+                  variant='contained' 
+                  color='primary'
+                  href='https://trevor2492.github.io/myFlix-Client-Angular/welcome'
+                  target='blank'
+                >
+                  Demo
+                </Button>
+                <Button 
+                  variant='contained' 
+                  color='primary'
+                  href='https://github.com/Trevor2492/myFlix-Client-Angular'
+                  target='blank'
+                >
+                  Code
+                </Button>
               </Card>
-            </Grid>
-            <Grid item className='work-grid-item' xs={12} sm={12} md={12} lg={12}>
-              <Card><img src={materialUiLogo} alt='test' style={{ height: '80px' }}/>
-                <Typography variant='h6'>
+            </div>
+            <div item className='work-grid-item'>
+              <Card><img src={meet} alt='test' style={{ width: '100%' }}/>
+                <Typography variant='h5'>
                   Meet-Up
                 </Typography>
                 <Typography variant='body1'>
-                  A project I created in React to show "Meet-up" type events based on location.
-                  The app uses mock data and integrates with the Google Calendar API.
+                  A project I created in React to show "Meet-up" type events based on user location.
+                  The app uses mock data and integrates with the Google Calendar API and requires authentication.
                 </Typography>
+                <Button 
+                  variant='contained' 
+                  color='primary'
+                  href='https://trevor2492.github.io/meet/'
+                  target='blank'
+                >
+                  Demo
+                </Button>
+                <Button 
+                  variant='contained' 
+                  color='primary'
+                  href='https://github.com/Trevor2492/meet'
+                  target='blank'
+                >
+                  Code
+                </Button>
               </Card>
-            </Grid>
-            <Grid item className='work-grid-item' xs={12} sm={12} md={12} lg={12}>
-              <Card><img src={materialUiLogo} alt='test' style={{ height: '80px' }}/>
-                <Typography variant='h6'>
+            </div>
+            <div item className='work-grid-item'>
+              <Card><img src={chat} alt='test' style={{ width: '100%' }}/>
+                <Typography variant='h5'>
                   React-Native Chat
                 </Typography>
                 <Typography variant='body1'>
                   A Chat app I created in React-Native. It uses the Gifted Chat library
-                  and allows users to share images from their device and their current location.
+                  and allows users to share images from their device and their current location. 
+                  See the ReadMe in GitHub for demo.
                 </Typography>
+                <Button 
+                  variant='contained' 
+                  color='primary'
+                  href='https://github.com/Trevor2492/Chat-app'
+                  target='blank'
+                >
+                  Code
+                </Button>
               </Card>
-            </Grid>
+            </div>
+
+            <div className='more-projects'>
+              <div>
+                <Typography variant='h5'>
+                  See More Projects Here:
+                </Typography>
+                <Button 
+                  href='https://github.com/Trevor2492?tab=repositories' 
+                  target='blank'
+                  variant='outlined'
+                  color='primary'
+                  style={{ marginTop: '10px' }}
+                >
+                  My GitHub
+                </Button>
+              </div>
+              <br />
+              <div>
+                <Typography>
+                  <text>(I'm particularly fond of my </text>
+                    <a 
+                      href='https://trevor2492.github.io/kanye-quotes/' 
+                      target='blank'
+                      style={{ textDecoration: 'underline' }}
+                    >
+                      Kanye Quotes
+                    </a>
+                  <text> app. *Caution: Language*)</text>
+                </Typography>
+              </div>
+            </div>
           </Grid>
         </Grid>
 
@@ -276,6 +376,7 @@ function App() {
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={6}>
           My family means everything to me. I wouldn't be who I am today without them.
+          <img src={family} alt='' style={{ width: '100%' }}/>
         </Grid>
         <Grid className='hmu' id='hmu' item xs={12} sm={12} md={12} lg={6}>
           <Typography variant='h1'>H</Typography>
