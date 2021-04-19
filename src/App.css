@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgb(238, 238, 238);
+  background-color: #5b98ed13;
   height: 100%;
 }
 
@@ -33,7 +33,7 @@ a {
 /* This is the class for all Grid items */
 .MuiGrid-item {
   margin-top: 15px;
-  height: 800px;
+  min-height: 800px;
   border-bottom: dotted gray 1px;
 }
 
@@ -110,7 +110,7 @@ a {
   }
 
   .MuiMenu-paper {
-    border-radius: 10px;
+    border-radius: 15px;
   }
 }
 

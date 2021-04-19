@@ -17,8 +17,10 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import KeyboardArrowUpRoundedIcon from '@material-ui/icons/KeyboardArrowUp';
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
+import GetAppRoundedIcon from '@material-ui/icons/GetAppRounded';
 import profileImage from './img/Profile_Image.jpg'
 import materialUiLogo from './img/Material_ui.png'
+import certificate from './files/CareerFoundry_Certificate_Trevor Allen.pdf'
 
 // used for the animations
 import lottie from 'lottie-web';
@@ -77,8 +79,18 @@ function App() {
   return (
     <StylesProvider injectFirst>
     <Container className="App" maxWidth='lg'>
-
+      
       <div className='nav' id='nav'>
+        <Button 
+          variant='contained' 
+          color='primary' 
+          style={{ marginRight: '10px' }}
+          startIcon={<GetAppRoundedIcon/>}
+          download
+          href='./Public/Allen_Trevor_Resume.pdf'
+        >
+          My Resume
+        </Button>
         <a href='#about-me' className='nav-item'>About</a>
         <a href='#work' className='nav-item'>Work</a>
         <a href='#school' className='nav-item'>School</a>
@@ -97,6 +109,24 @@ function App() {
           open={Boolean(anchorEl)}
           onClose={handleClose}
         >
+          <MenuItem onClick={handleClose}>
+            <a 
+              href='./Public/Allen_Trevor_Resume.pdf' 
+              className='nav-item' 
+              download
+            >
+              <Button 
+                variant='contained' 
+                color='primary' 
+                style={{ marginRight: '10px' }}
+                startIcon={<GetAppRoundedIcon/>}
+                download
+                href='./Public/Allen_Trevor_Resume.pdf'
+              >
+                Resume
+              </Button>
+            </a>
+          </MenuItem>
           <MenuItem onClick={handleClose}>
             <a href='#about-me' className='nav-item'>About</a>
           </MenuItem>
@@ -215,9 +245,23 @@ function App() {
           <Typography variant='h3'>for</Typography>
           <Typography variant='h1'>School</Typography>
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={6}>
-          BYU-I / Careerfoundry
+        <Grid item xs={12} sm={12} md={12} lg={6} style={{ padding: '20px' }}>
+          <Typography variant='h4'>
+            Brigham Young University - Idaho
+          </Typography>
+          <Typography variant='h6'>
+            Bachelor's of Business Management - Marketing
+          </Typography>
+          <img src='https://dummyimage.com/16:9x1080' alt='placeholder' style={{ width: '100%' }}/>
+          <Typography variant='h4'>
+            Career Foundry
+          </Typography>
+          <Typography variant='h6'>
+            Full-Stack Web Development Certification
+          </Typography>
+          <img src={certificate} alt='certificate' style={{ width: '100%' }}/>
         </Grid>
+
         <Grid className='family' id='family' item xs={12} sm={12} md={12} lg={6}>
           <Typography variant='h1'>F</Typography>
           <Typography variant='h3'>is</Typography>
