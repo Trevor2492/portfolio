@@ -26,6 +26,8 @@ import certificate from './files/CareerFoundry_Certificate_Trevor Allen.pdf'
 import lottie from 'lottie-web';
 import reactLogo from './react-logo.json';
 import contactMe from './contactMe.json';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import 'fontsource-roboto';
 
@@ -79,7 +81,7 @@ function App() {
   return (
     <StylesProvider injectFirst>
     <Container className="App" maxWidth='lg'>
-      
+
       <div className='nav' id='nav'>
         <Button 
           variant='contained' 
@@ -97,6 +99,10 @@ function App() {
         <a href='#family' className='nav-item'>Family</a>
         <a href='#hmu' className='nav-item'>Contact</a>
       </div>
+
+      <ScrollAnimation animateIn="fadeIn">
+        Some Text
+      </ScrollAnimation>
 
       <div className='hamburger' id='hamburger'>
         <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
