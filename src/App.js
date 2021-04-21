@@ -1,7 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import { Container, 
-          Tooltip, 
           Typography, 
           Grid, 
           Fab, 
@@ -12,7 +11,6 @@ import { Container,
           } from '@material-ui/core';
 import { StylesProvider } from '@material-ui/core/styles';
 import MailRoundedIcon from '@material-ui/icons/MailRounded';
-import InsertDriveFileRoundedIcon from '@material-ui/icons/InsertDriveFileRounded';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import KeyboardArrowUpRoundedIcon from '@material-ui/icons/KeyboardArrowUp';
@@ -24,15 +22,17 @@ import myFlixReact from './img/myflix-react.png'
 import myFlixAngular from './img/myflix-angular.png'
 import meet from './img/meet.png'
 import chat from './img/chat.png'
-import family from './img/family.jpeg'
+import family from './img/family.jpg'
 import certificate from './img/certificate.png'
+import byuiLogo from './img/byui.png'
+import resume from './files/Allen_Trevor_Resume.pdf'
 
 // used for the animations
 import lottie from 'lottie-web';
 import reactLogo from './react-logo.json';
 import contactMe from './contactMe.json';
 import "animate.css/animate.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
+// import ScrollAnimation from 'react-animate-on-scroll';
 
 import 'fontsource-roboto';
 
@@ -93,8 +93,8 @@ function App() {
           color='primary' 
           className='resume-button'
           startIcon={<GetAppRoundedIcon/>}
+          href={resume}
           download
-          href='./Public/Allen_Trevor_Resume.pdf'
         >
           My Resume
         </Button>
@@ -105,9 +105,9 @@ function App() {
         <a href='#hmu' className='nav-item'>Contact</a>
       </div>
 
-      <ScrollAnimation  >
+      {/* <ScrollAnimation  >
         Some Text
-      </ScrollAnimation>
+      </ScrollAnimation> */}
 
       {/* displays the hamburger menu on mobile. Is hidden on large screens */}
       <div className='hamburger' id='hamburger'>
@@ -122,22 +122,16 @@ function App() {
           onClose={handleClose}
         >
           <MenuItem onClick={handleClose}>
-            <a 
-              href='./Public/Allen_Trevor_Resume.pdf' 
-              className='nav-item' 
+            <Button 
+              variant='contained' 
+              color='primary' 
+              style={{ marginRight: '10px' }}
+              startIcon={<GetAppRoundedIcon/>}
+              href={resume}
               download
             >
-              <Button 
-                variant='contained' 
-                color='primary' 
-                style={{ marginRight: '10px' }}
-                startIcon={<GetAppRoundedIcon/>}
-                download
-                href='./Public/Allen_Trevor_Resume.pdf'
-              >
-                Resume
-              </Button>
-            </a>
+              Resume
+            </Button>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <a href='#about-me' className='nav-item'>About</a>
@@ -358,14 +352,14 @@ function App() {
           <Typography variant='h6'>
             Bachelor's of Business Management - Marketing
           </Typography>
-          <img src='https://dummyimage.com/16:9x1080' alt='placeholder' style={{ width: '100%' }}/><br />
+          <a href='https://www.byui.edu' target='blank'><img src={byuiLogo} alt='Brigham Young University-Idaho' style={{ width: '90%' }}/></a> 
           <Typography variant='h4'>
             Career Foundry
           </Typography>
           <Typography variant='h6'>
             Full-Stack Web Development Certification
           </Typography>
-          <img src={certificate} alt='certificate' style={{ width: '100%' }}/>
+          <a href='https://careerfoundry.com' target='blank'><img src={certificate} alt='certificate' style={{ width: '100%' }}/></a>
         </Grid>
 
         <Grid className='family' id='family' item xs={12} sm={12} md={12} lg={6}>
@@ -375,8 +369,8 @@ function App() {
           <Typography variant='h1'>Family</Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={6}>
-          My family means everything to me. I wouldn't be who I am today without them.
-          <img src={family} alt='' style={{ width: '100%' }}/>
+          <Typography variant='h6'>My family means everything to me. I wouldn't be who I am today without them.</Typography>
+          <img src={family} alt='' style={{ width: '100%', borderRadius: '20px', marginTop: '10px' }}/>
         </Grid>
         <Grid className='hmu' id='hmu' item xs={12} sm={12} md={12} lg={6}>
           <Typography variant='h1'>H</Typography>
@@ -391,35 +385,33 @@ function App() {
             <div id='hmu-2' style={{ height: 400 }}/>
           </a>
 
-          <a href='mailto:trevor2492@gmail.com'>
-            <Tooltip title='Email to: trevor2492@gmail.com'>
-              <MailRoundedIcon style={{ color: 'black' }}/>
-            </Tooltip>
-          </a><br />
+            <Button href='mailto:trevor2492@gmail.com' variant='contained' color='primary' startIcon={<MailRoundedIcon/>}>
+              Email
+            </Button><br />
           
-          <a href='./Allen_Trevor_Resume.pdf' download>
-            <Tooltip title='Download My Resume'>
-              <InsertDriveFileRoundedIcon style={{ color: 'black' }}/>
-            </Tooltip>
-          </a><br />
+            <Button href={resume} download variant='contained' color='primary' startIcon={<GetAppRoundedIcon/>}>
+              My Resume
+            </Button><br />
 
-          <a 
-            href='https://www.linkedin.com/in/trevor-allen-64b024a6/' 
-            target='blank'
-          >
-            <Tooltip title='My LinkedIn'>
-              <LinkedInIcon style={{ color: 'black' }}/>
-            </Tooltip>
-          </a><br />
+            <Button 
+              href='https://www.linkedin.com/in/trevor-allen-64b024a6/' 
+              target='blank' 
+              variant='contained' 
+              color='primary' 
+              startIcon={<LinkedInIcon/>}
+            >
+              LinkedIn
+            </Button><br />
 
-          <a 
-            href='https://github.com/Trevor2492' 
-            target='blank'
-          >
-            <Tooltip title='My GitHub'>
-              <GitHubIcon style={{ color: 'black' }}/>
-            </Tooltip>
-          </a>
+            <Button 
+              href='https://github.com/Trevor2492' 
+              target='blank'
+              variant='contained' 
+              color='primary' 
+              startIcon={<GitHubIcon/>}
+            >
+              GitHub
+            </Button>
         </Grid>
       </Grid>
 
