@@ -25,7 +25,7 @@ import myFlixAngular from './img/myflix-angular.png'
 import meet from './img/meet.png'
 import chat from './img/chat.png'
 import family from './img/family.jpeg'
-import certificate from './files/CareerFoundry_Certificate_Trevor Allen.pdf'
+import certificate from './img/certificate.png'
 
 // used for the animations
 import lottie from 'lottie-web';
@@ -358,7 +358,7 @@ function App() {
           <Typography variant='h6'>
             Bachelor's of Business Management - Marketing
           </Typography>
-          <img src='https://dummyimage.com/16:9x1080' alt='placeholder' style={{ width: '100%' }}/>
+          <img src='https://dummyimage.com/16:9x1080' alt='placeholder' style={{ width: '100%' }}/><br />
           <Typography variant='h4'>
             Career Foundry
           </Typography>
