@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f7052608.chunk.css",
-    "main.js": "/portfolio/static/js/main.fca44314.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.fca44314.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.17caa79f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.17caa79f.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.43d9a0ba.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.43d9a0ba.js.map",
     "static/css/2.a3040da9.chunk.css": "/portfolio/static/css/2.a3040da9.chunk.css",
@@ -12,7 +12,7 @@
     "static/css/2.a3040da9.chunk.css.map": "/portfolio/static/css/2.a3040da9.chunk.css.map",
     "static/css/main.f7052608.chunk.css.map": "/portfolio/static/css/main.f7052608.chunk.css.map",
     "static/js/2.c1cc0c04.chunk.js.LICENSE.txt": "/portfolio/static/js/2.c1cc0c04.chunk.js.LICENSE.txt",
-    "static/media/Allen_Trevor_Resume.96d9e898.pdf": "/portfolio/static/media/Allen_Trevor_Resume.96d9e898.pdf",
+    "static/media/Allen_Trevor_Resume.77561548.pdf": "/portfolio/static/media/Allen_Trevor_Resume.77561548.pdf",
     "static/media/Material_ui.5b2d8a0a.png": "/portfolio/static/media/Material_ui.5b2d8a0a.png",
     "static/media/Profile_Image.3f92291f.jpg": "/portfolio/static/media/Profile_Image.3f92291f.jpg",
     "static/media/App.css": "/portfolio/static/media/SF_Fedora.dfefb480.ttf",
@@ -30,6 +30,6 @@
     "static/css/2.a3040da9.chunk.css",
     "static/js/2.c1cc0c04.chunk.js",
     "static/css/main.f7052608.chunk.css",
-    "static/js/main.fca44314.chunk.js"
+    "static/js/main.17caa79f.chunk.js"
   ]
 }
