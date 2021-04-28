@@ -416,6 +416,7 @@ function App() {
       </Grid>
 
       <div className='footer' id='footer'>
+        <div style={{ margin: 15, color: '#000' }}>trevor2492@gmail.com</div>
         <div>Created with React</div>
         <div id='react-logo' alt='react logo' style={{ height: 50 }}/>
         <div>and Material UI</div> 
