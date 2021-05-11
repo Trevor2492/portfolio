@@ -25,6 +25,11 @@ import chat from './img/chat.png'
 import family from './img/family.jpg'
 import certificate from './img/certificate.png'
 import byuiLogo from './img/byui.png'
+import squiggle from './img/squiggle.png'
+import swirl from './img/swirl.png'
+import nineties from './img/90s.png'
+import triangle from './img/triangle.svg'
+import diamond from './img/diamond.svg'
 import resume from './files/Allen_Trevor_Resume.pdf'
 
 // used for the animations
@@ -153,6 +158,7 @@ function App() {
 
       <Grid container spacing={1}>
         <Grid item className='hero' id='hero' xs={12} sm={12} md={12} lg={6}>
+          <img src={nineties} className='nineties' alt='90s' />
           <Typography variant='h1'>T</Typography>
           <Typography variant='h3'>is</Typography>
           <Typography variant='h3'>for</Typography>
@@ -163,13 +169,16 @@ function App() {
         </Grid>
 
         <Grid item className='about-me' id='about-me' xs={12} sm={12} md={12} lg={6}>
+          <img src={squiggle} className='squiggle' alt='squiggle'/>
+          <img src={triangle} className='triangle' alt='triangle' />
           <Typography variant='h1'>A</Typography>
           <Typography variant='h3'>little</Typography>
           <Typography variant='h3'>about</Typography>
           <Typography variant='h1'>Me</Typography>
         </Grid>
         <Grid className='kid' item xs={12} sm={12} md={12} lg={6}>
-          <Typography variant='h2'>I'm a 90's Kid...</Typography>
+          <img src={swirl} className='swirl' alt='swirl'/>
+          <Typography variant='h2'>I'm a <span className='nineties-kid' style={{ marginRight: 8 }}>90's</span> Kid...</Typography>
           <Typography variant='h6'>
             Pokemon, Hot Wheels, N64, Tomigachi...(remember those?)
           </Typography>
@@ -189,6 +198,7 @@ function App() {
               looking for opportunities to learn and grow my skillset and add value in my community.
             </p>
           </Typography>
+          <img src={diamond} className='diamond' alt='diamond'/>
         </Grid>
 
         <Grid className='work' id='work' item xs={12} sm={12} md={12} lg={6}>

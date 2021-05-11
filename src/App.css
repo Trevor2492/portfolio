@@ -12,7 +12,8 @@
 }
 
 .MuiTypography-h1,
-.MuiTypography-h3 {
+.MuiTypography-h3,
+.nineties-kid {
   font-family: SFFedora;
 }
 
@@ -43,6 +44,58 @@ a {
   width: 80%;
   border-radius: 20px;
   box-shadow: 5px 5px 30px rgb(134, 134, 134);
+}
+
+.squiggle {
+  position: relative;
+  left: 275px;
+  bottom: 100px;
+  animation: 20s spin-right linear infinite;
+  z-index: 0;
+}
+
+.swirl {
+  position: relative;
+  width: 5%;
+  left: 400px;
+  bottom: 100px;
+  animation: 10s spin-left linear infinite;
+}
+
+.triangle {
+  position: relative;
+  left: 450px;
+  top: 400px;
+  width: 5%;
+  animation: 10s spin-left linear infinite;
+}
+
+.diamond {
+  position: relative;
+  left: 350px;
+  bottom: -70px;
+  animation: 15s spin-right linear infinite;
+  width: 5%;
+}
+
+.nineties {
+  z-index: -1;
+  position: absolute;
+  bottom: 160px;
+  width: 60%;
+  transform: rotate(35deg);
+}
+
+@keyframes spin-right {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-left {
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 .hero-2 {
