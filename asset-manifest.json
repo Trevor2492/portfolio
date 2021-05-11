@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f7052608.chunk.css",
-    "main.js": "/portfolio/static/js/main.077db717.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.077db717.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.02313ae4.chunk.css",
+    "main.js": "/portfolio/static/js/main.ba8f1f85.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.ba8f1f85.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.76232b81.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.76232b81.js.map",
     "static/css/2.a3040da9.chunk.css": "/portfolio/static/css/2.a3040da9.chunk.css",
@@ -10,8 +10,9 @@
     "static/js/2.c37fbfcc.chunk.js.map": "/portfolio/static/js/2.c37fbfcc.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.a3040da9.chunk.css.map": "/portfolio/static/css/2.a3040da9.chunk.css.map",
-    "static/css/main.f7052608.chunk.css.map": "/portfolio/static/css/main.f7052608.chunk.css.map",
+    "static/css/main.02313ae4.chunk.css.map": "/portfolio/static/css/main.02313ae4.chunk.css.map",
     "static/js/2.c37fbfcc.chunk.js.LICENSE.txt": "/portfolio/static/js/2.c37fbfcc.chunk.js.LICENSE.txt",
+    "static/media/90s.5ec6508a.png": "/portfolio/static/media/90s.5ec6508a.png",
     "static/media/Allen_Trevor_Resume.77561548.pdf": "/portfolio/static/media/Allen_Trevor_Resume.77561548.pdf",
     "static/media/Material_ui.5b2d8a0a.png": "/portfolio/static/media/Material_ui.5b2d8a0a.png",
     "static/media/Profile_Image.3f92291f.jpg": "/portfolio/static/media/Profile_Image.3f92291f.jpg",
@@ -19,17 +20,19 @@
     "static/media/byui.d12aa560.png": "/portfolio/static/media/byui.d12aa560.png",
     "static/media/certificate.4048240c.png": "/portfolio/static/media/certificate.4048240c.png",
     "static/media/chat.3d9ef6c3.png": "/portfolio/static/media/chat.3d9ef6c3.png",
+    "static/media/diamond.15f1d740.svg": "/portfolio/static/media/diamond.15f1d740.svg",
     "static/media/family.dd7cff78.jpg": "/portfolio/static/media/family.dd7cff78.jpg",
     "static/media/meet.a707e332.png": "/portfolio/static/media/meet.a707e332.png",
     "static/media/myflix-angular.d7b83876.png": "/portfolio/static/media/myflix-angular.d7b83876.png",
     "static/media/myflix-react.4d3732a7.png": "/portfolio/static/media/myflix-react.4d3732a7.png",
-    "static/media/index.css": "/portfolio/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
+    "static/media/index.css": "/portfolio/static/media/roboto-vietnamese-400-normal.52cebac0.woff2",
+    "static/media/triangle.3ae6a659.svg": "/portfolio/static/media/triangle.3ae6a659.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.76232b81.js",
     "static/css/2.a3040da9.chunk.css",
     "static/js/2.c37fbfcc.chunk.js",
-    "static/css/main.f7052608.chunk.css",
-    "static/js/main.077db717.chunk.js"
+    "static/css/main.02313ae4.chunk.css",
+    "static/js/main.ba8f1f85.chunk.js"
   ]
 }
