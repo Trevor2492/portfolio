@@ -17,7 +17,6 @@ import KeyboardArrowUpRoundedIcon from '@material-ui/icons/KeyboardArrowUp';
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import GetAppRoundedIcon from '@material-ui/icons/GetAppRounded';
 import profileImage from './img/Profile_Image.jpg'
-import materialUiLogo from './img/Material_ui.png'
 import myFlixReact from './img/myflix-react.png'
 import myFlixAngular from './img/myflix-angular.png'
 import meet from './img/meet.png'
@@ -429,8 +428,6 @@ function App() {
         <div style={{ margin: 15, color: '#000' }}>trevor2492@gmail.com</div>
         <div>Created with React</div>
         <div id='react-logo' alt='react logo' style={{ height: 50 }}/>
-        <div>and Material UI</div> 
-        <img src={materialUiLogo} alt='material ui logo' style={{ height: 50 }}/>
       </div>
 
       {/* renders the FAB */}
