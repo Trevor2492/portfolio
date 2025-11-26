@@ -21,7 +21,6 @@ import myFlixReact from './img/myflix-react.png'
 import myFlixAngular from './img/myflix-angular.png'
 import meet from './img/meet.png'
 import chat from './img/chat.png'
-import family from './img/family.jpg'
 import certificate from './img/certificate.png'
 import byuiLogo from './img/byui.png'
 import squiggle from './img/squiggle.png'
@@ -29,7 +28,7 @@ import swirl from './img/swirl.png'
 import nineties from './img/90s.png'
 import triangle from './img/triangle.svg'
 import diamond from './img/diamond.svg'
-import resume from './files/Allen_Trevor_Resume.pdf'
+import resume from './files/Trevor_Allen_Resume.pdf'
 
 // used for the animations
 import lottie from 'lottie-web';
@@ -104,14 +103,9 @@ function App() {
         </Button>
         <a href='#about-me' className='nav-item'>About</a>
         <a href='#work' className='nav-item'>Work</a>
-        <a href='#school' className='nav-item'>School</a>
-        <a href='#family' className='nav-item'>Family</a>
+        <a href='#education' className='nav-item'>Education</a>
         <a href='#hmu' className='nav-item'>Contact</a>
       </div>
-
-      {/* <ScrollAnimation  >
-        Some Text
-      </ScrollAnimation> */}
 
       {/* displays the hamburger menu on mobile. Is hidden on large screens */}
       <div className='hamburger' id='hamburger'>
@@ -144,10 +138,7 @@ function App() {
             <a href='#work' className='nav-item'>Work</a>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <a href='#school' className='nav-item'>School</a>
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <a href='#family' className='nav-item'>Family</a>
+            <a href='#education' className='nav-item'>Education</a>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <a href='#hmu' className='nav-item'>Contact</a>
@@ -162,6 +153,7 @@ function App() {
           <Typography variant='h3'>is</Typography>
           <Typography variant='h3'>for</Typography>
           <Typography variant='h1'>Trevor</Typography>
+          <video autoPlay muted loop id='background-video' src='src/img/cx-bio_read_more.MP4'/>
         </Grid>
         <Grid item className='hero-2' id='hero-2' xs={12} sm={12} md={12} lg={6}>
           <img src={profileImage} className='profileImg' alt='trevor' />
@@ -187,13 +179,7 @@ function App() {
               I was taught to work hard, stay humble, and to help other people in need whenever I could.
             </p>
             <p>
-              At Brigham Young University-Idaho I studied mechanical and electrical engineering, 
-              before ultimately shifting focus and changing my major to business management. 
-              After graduating in the spring of 2018, I worked as a marketing program manager in Salt Lake City 
-              where I gained valuable experience and insight into the working world. 
-            </p>
-            <p>
-              I'm now a certified Full-Stack JavaScript developer with industry experience, 
+              I'm a certified Full-Stack JavaScript developer with industry experience, 
               looking for opportunities to learn and grow my skillset and add value in my community.
             </p>
           </Typography>
@@ -348,11 +334,11 @@ function App() {
           </Grid>
         </Grid>
 
-        <Grid className='school' id='school' item xs={12} sm={12} md={12} lg={6}>
-          <Typography variant='h1'>S</Typography>
+        <Grid className='education' id='education' item xs={12} sm={12} md={12} lg={6}>
+          <Typography variant='h1'>E</Typography>
           <Typography variant='h3'>is</Typography>
           <Typography variant='h3'>for</Typography>
-          <Typography variant='h1'>School</Typography>
+          <Typography variant='h1'>Education</Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={6} style={{ padding: '20px' }}>
           <Typography variant='h4'>
@@ -361,7 +347,7 @@ function App() {
           <Typography variant='h6'>
             Bachelor's of Business Management - Marketing
           </Typography>
-          <a href='https://www.byui.edu' target='blank'><img src={byuiLogo} alt='Brigham Young University-Idaho' style={{ width: '90%' }}/></a> 
+          <img src={byuiLogo} alt='Brigham Young University-Idaho' style={{ width: '50%', marginBottom: '3rem' }}/>
           <Typography variant='h4'>
             Career Foundry
           </Typography>
@@ -371,16 +357,6 @@ function App() {
           <a href='https://careerfoundry.com' target='blank'><img src={certificate} alt='certificate' style={{ width: '100%' }}/></a>
         </Grid>
 
-        <Grid className='family' id='family' item xs={12} sm={12} md={12} lg={6}>
-          <Typography variant='h1'>F</Typography>
-          <Typography variant='h3'>is</Typography>
-          <Typography variant='h3'>for</Typography>
-          <Typography variant='h1'>Family</Typography>
-        </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={6}>
-          <Typography variant='h6'>My family means everything to me. I wouldn't be who I am today without them.</Typography>
-          <img src={family} alt='' style={{ width: '100%', borderRadius: '20px', marginTop: '10px' }}/>
-        </Grid>
         <Grid className='hmu' id='hmu' item xs={12} sm={12} md={12} lg={6}>
           <Typography variant='h1'>H</Typography>
           <Typography variant='h3'>is</Typography>
