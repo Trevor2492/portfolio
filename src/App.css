@@ -111,8 +111,7 @@ a {
 .hero,
 .about-me,
 .kid,
-.family,
-.school,
+.education,
 .work,
 .hmu {
   display: flex;
@@ -157,6 +156,13 @@ a {
 .MuiCard-root {
   padding: 15px;
   border-radius: 15px;
+  h5 {
+    margin: 1rem 0;
+  }
+  p {
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+  }
 }
 
 .more-projects {
@@ -244,5 +250,117 @@ a {
 @media only screen and (min-width: 450px) {
   .hamburger {
     visibility: hidden;
+  }
+}
+
+/* Connexus work page */
+
+/* Top-level section  */
+.top-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  .typography {
+    width: 60%;
+    margin-top: 1rem;
+  }
+}
+
+.cx-section {
+  position: relative;
+  margin: 6rem 0;
+  padding: 2rem 0;
+
+  .MuiTypography-h4 {
+    font-weight: 500;
+  }
+}
+
+/* .cx-inner centers content, constrains it, and is the 50/50 flex container */
+.cx-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+
+/* For odd-numbered sections we stretch the section backgrounds full width
+   and reverse the inner column order. The negative margins / left shift
+   technique lets the section background ignore parent container constraints */
+.cx-section.odd {
+  background-color: #f2f6ff;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 4rem 0;
+}
+
+.cx-column {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+  min-width: 260px;
+}
+
+.cx-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+
+  video {
+    max-height: 700px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+}
+
+.cx-images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.cx-text {
+  padding: 0 1rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .MuiGrid-item {
+    min-height: 550px;
+  }
+
+  .MuiTypography-h1 {
+    font-size: 4rem;
+  }
+
+  .top-container {
+    .typography {
+      width: unset;
+    }
+  }
+  /* On small screens, stack the inner columns */
+  .cx-inner {
+    flex-direction: column !important;
+    align-items: stretch;
+  }
+
+  .cx-column {
+    flex-basis: 100%;
+  }
+
+  .cx-images {
+    video {
+      width: 100%;
+    }
   }
 }
