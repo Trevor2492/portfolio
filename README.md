@@ -29,6 +29,12 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run deploy`
+
+Deploys the app and gets it live in production.
+(Give it a few minutes to update)
+More documentation: https://create-react-app.dev/docs/deployment#github-pages
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
@@ -62,6 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
+
+In order to run a deployment to get the site live on GitHub Pages:
+### `npm run deploy`
+
+(Give it a few minutes to update)
+More documentation: https://create-react-app.dev/docs/deployment#github-pages
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
