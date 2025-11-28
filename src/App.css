@@ -156,6 +156,13 @@ a {
 .MuiCard-root {
   padding: 15px;
   border-radius: 15px;
+  h5 {
+    margin: 1rem 0;
+  }
+  p {
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+  }
 }
 
 .more-projects {
@@ -309,7 +316,7 @@ a {
   justify-content: center;
 
   video {
-    max-height: 775px;
+    max-height: 700px;
     border: 1px solid #ddd;
     border-radius: 8px;
   }
@@ -328,6 +335,14 @@ a {
 
 
 @media only screen and (max-width: 768px) {
+  .MuiGrid-item {
+    min-height: 550px;
+  }
+
+  .MuiTypography-h1 {
+    font-size: 4rem;
+  }
+
   .top-container {
     .typography {
       width: unset;

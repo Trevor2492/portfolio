@@ -17,7 +17,6 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import KeyboardArrowUpRoundedIcon from "@material-ui/icons/KeyboardArrowUp";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
-import GetAppRoundedIcon from "@material-ui/icons/GetAppRounded";
 import profileImage from "./img/Profile_Image.jpg";
 import myFlixReact from "./img/myflix-react.png";
 import certificate from "./img/certificate.png";
@@ -83,6 +82,8 @@ function App() {
     setAnchorEl(null);
   };
 
+  const githubLink = "https://github.com/Trevor2492?tab=repositories";
+
   return (
     <Router>
       {/* ensure the window is scrolled to top on route changes */}
@@ -99,9 +100,8 @@ function App() {
                     variant="contained"
                     color="primary"
                     className="resume-button"
-                    startIcon={<GetAppRoundedIcon />}
                     href={resume}
-                    download
+                    target="blank"
                   >
                     My Resume
                   </Button>
@@ -113,6 +113,9 @@ function App() {
                   </a>
                   <a href="#education" className="nav-item">
                     Education
+                  </a>
+                  <a href={githubLink} className="nav-item" target="blank" rel="noopener noreferrer">
+                    GitHub
                   </a>
                   <a href="#hmu" className="nav-item">
                     Contact
@@ -140,9 +143,8 @@ function App() {
                         variant="contained"
                         color="primary"
                         style={{ marginRight: "10px" }}
-                        startIcon={<GetAppRoundedIcon />}
                         href={resume}
-                        download
+                        target="blank"
                       >
                         Resume
                       </Button>
@@ -160,6 +162,11 @@ function App() {
                     <MenuItem onClick={handleClose}>
                       <a href="#education" className="nav-item">
                         Education
+                      </a>
+                    </MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <a href={githubLink} className="nav-item" target="blank" rel="noopener noreferrer">
+                        GitHub
                       </a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
@@ -241,7 +248,8 @@ function App() {
                       <p>
                         I was born and raised in California with strong ethical
                         and moral standards. I was taught to work hard, stay
-                        humble, and help other people.
+                        humble, and help other people. I now live in Central Wisconsin
+                        with my wife and our two boys.
                       </p>
                       <p>
                         I'm a Full-Stack developer with ~5 years of experience,
@@ -269,7 +277,7 @@ function App() {
                   <Grid item xs={12} sm={12} md={12} lg={6}>
                     <Grid container className="work-grid-container">
                       <div item className="work-grid-item">
-                        <Card>
+                        <Card className="card">
                           <img
                             src={checkingCalculatorImg}
                             alt="checking calculator"
@@ -279,7 +287,7 @@ function App() {
                             My Recent Work at Connexus
                           </Typography>
                           <Typography variant="body1">
-                            Check out my dynamic rate and investment
+                            A <strong>Headless Wordpress</strong> environment built with PHP and <strong>Next.js</strong>. Check out my dynamic rate and investment
                             calculators, interactive components, and more.
                           </Typography>
                           <Button
@@ -302,7 +310,7 @@ function App() {
                         </Card>
                       </div>
                       <div item className="work-grid-item">
-                        <Card>
+                        <Card className="card">
                           <img
                             src={myFlixReact}
                             alt="test"
@@ -318,8 +326,9 @@ function App() {
                           <Button
                             variant="outlined"
                             color="primary"
-                            href="https://github.com/Trevor2492?tab=repositories"
+                            href={githubLink}
                             target="blank"
+                            startIcon={<GitHubIcon />}
                           >
                             My GitHub
                           </Button>
@@ -422,10 +431,9 @@ function App() {
 
                     <Button
                       href={resume}
-                      download
+                      target="blank"
                       variant="contained"
                       color="primary"
-                      startIcon={<GetAppRoundedIcon />}
                     >
                       My Resume
                     </Button>
@@ -443,7 +451,7 @@ function App() {
                     <br />
 
                     <Button
-                      href="https://github.com/Trevor2492"
+                      href={githubLink}
                       target="blank"
                       variant="contained"
                       color="primary"
