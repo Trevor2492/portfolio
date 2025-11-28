@@ -5,6 +5,10 @@
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "SFFedora";
   src: local("SFFedora"), url("./fonts/SF_Fedora.ttf") format("truetype");
